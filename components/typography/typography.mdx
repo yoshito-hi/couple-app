@@ -1,0 +1,39 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { TypographyH1, TypographyP, TypographyMuted } from './typography';
+import { zenMaruGothic, notoSansJp } from '../../lib/fonts';
+
+<Meta title="Typography/Overview" />
+
+# Typography Overview
+
+このプロジェクトで使用するタイポグラフィコンポーネントの組み合わせ例です。
+
+## 基本の組み合わせ
+見出し、日付（Muted）、本文を組み合わせた標準的な構成です。
+
+<div className={`${zenMaruGothic.variable} ${notoSansJp.variable} sb-unstyled flex flex-col gap-2 max-w-prose border p-6 rounded-xl bg-background shadow-sm my-6`}>
+  <TypographyH1 className="mb-0">思い出のフォトアルバム</TypographyH1>
+  <TypographyMuted as="time">2024.04.26 — 更新</TypographyMuted>
+  <div className="mt-4">
+    <TypographyP>
+      二人の大切な瞬間を記録するためのアプリです。Zen Maru Gothicの丸みのあるフォントで見出しを構成し、本文は読みやすいNoto Sans JPを使用しています。
+    </TypographyP>
+  </div>
+  <TypographyMuted className="mt-4">
+    ※ 補足事項や注釈は TypographyMuted を使用します。
+  </TypographyMuted>
+</div>
+
+## 各コンポーネントの役割
+
+### TypographyH1
+- **用途**: ページの主見出し、セクションタイトル
+- **フォント**: Zen Maru Gothic (Bold)
+
+### TypographyP
+- **用途**: 本文、説明文
+- **フォント**: Noto Sans JP (Regular)
+
+### TypographyMuted
+- **用途**: 日付、キャプション、補足、注釈
+- **フォント**: Noto Sans JP (Light 300)

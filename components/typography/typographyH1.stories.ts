@@ -20,6 +20,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "テスト用テキスト"
+    children: "見出し（Zen Maru Gothic）"
   }
 }

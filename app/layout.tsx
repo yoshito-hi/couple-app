@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { geistSans, geistMono, zenMaruGothic } from "@/lib/fonts";
+import { geistSans, geistMono, zenMaruGothic, notoSansJp } from "@/lib/fonts";
 import "./globals.css";
 
 
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${zenMaruGothic.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${zenMaruGothic.variable} ${notoSansJp.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

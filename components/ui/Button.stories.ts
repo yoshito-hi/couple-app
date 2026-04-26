@@ -108,3 +108,10 @@ export const IconButton: Story = {
     "aria-label": "Rocket icon",
   },
 }
+
+export const Basic: Story = {
+  args: {
+    size: "default",
+    variant: "basic"
+  }
+}

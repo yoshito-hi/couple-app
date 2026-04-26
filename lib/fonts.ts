@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Zen_Maru_Gothic } from "next/font/google";
+import { Geist, Geist_Mono, Zen_Maru_Gothic, Noto_Sans_JP } from "next/font/google";
 
 export const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,6 +13,11 @@ export const geistMono = Geist_Mono({
 export const zenMaruGothic = Zen_Maru_Gothic({
   weight: ['400', '700'],
   subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-zen-maru',
+  variable: '--font-zen-maru-gothic',
+});
+
+export const notoSansJp = Noto_Sans_JP({
+  weight: ['300', '400', '700'],
+  subsets: ['latin'],
+  variable: "--font-noto-sans-jp-font",
 });

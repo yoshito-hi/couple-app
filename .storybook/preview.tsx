@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Preview } from '@storybook/nextjs-vite'
-import { geistSans, geistMono, zenMaruGothic } from '../lib/fonts'
+import { geistSans, geistMono, zenMaruGothic, notoSansJp } from '../lib/fonts'
 import "../app/globals.css"
 
 const preview: Preview = {
@@ -18,7 +18,7 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <div className={`${geistSans.variable} ${geistMono.variable} ${zenMaruGothic.variable} font-sans antialiased`}>
+      <div className={`${geistSans.variable} ${geistMono.variable} ${zenMaruGothic.variable} ${notoSansJp.variable} font-sans antialiased`}>
         <Story />
       </div>
     ),
