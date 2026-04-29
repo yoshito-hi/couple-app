@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { TypographyMuted } from './typography';
 
 const meta = {
-  title: 'Typography/TypographyMuted',
+  title: 'Base/Typography/TypographyMuted',
   component: TypographyMuted,
   parameters: {
     layout: 'centered',

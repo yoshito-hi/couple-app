@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { TypographyP } from './typography';
 
 const meta = {
-  title: 'Typography/TypographyP',
+  title: 'Base/Typography/TypographyP',
   component: TypographyP,
   parameters: {
     layout: 'centered',

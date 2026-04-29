@@ -6,11 +6,9 @@ import {
   AppCardTitle,
   AppCardDescription,
   AppCardContent,
-  AppCardAction,
 } from "./AppCard"
 import { AppButton } from "./AppButton"
-import { MoreHorizontal } from "lucide-react"
-import { TypographyH1, TypographyP } from "../typography/typography"
+import { TypographyH1, TypographyP } from "@/components/base/typography/typography"
 
 const meta: Meta<typeof AppCard> = {
   title: "Base/AppCard",

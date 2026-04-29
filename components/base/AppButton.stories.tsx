@@ -50,6 +50,13 @@ export const Outline: Story = {
   },
 }
 
+export const Ghost: Story = {
+  args: {
+    variant: "ghost",
+    children: "Ghost Button",
+  },
+}
+
 export const Destructive: Story = {
   args: {
     variant: "destructive",

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { TypographyH1 } from './typography';
 
 const meta = {
-  title: 'Typography/TypographyH1',
+  title: 'Base/Typography/TypographyH1',
   component: TypographyH1,
   parameters: {
     layout: 'centered',
