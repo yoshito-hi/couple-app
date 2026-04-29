@@ -10,10 +10,7 @@ import {
 } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
 
-export interface AppCardProps extends React.ComponentProps<typeof Card> {
-  /** アプリ基本スタイルを適用するかどうか */
-  isAppStyle?: boolean
-}
+export type AppCardProps = React.ComponentProps<typeof Card>
 
 /**
  * アプリの基本となるカードコンポーネント。
@@ -21,13 +18,10 @@ export interface AppCardProps extends React.ComponentProps<typeof Card> {
  */
 export function AppCard({
   className,
-  isAppStyle = true,
   ...props
 }: AppCardProps) {
   // アプリ固有のスタイル：16px角丸(rounded-2xl)と柔らかな影(shadow-basic)
-  const appBaseStyles = isAppStyle
-    ? "shadow-basic rounded-2xl border-none bg-card text-card-foreground"
-    : ""
+  const appBaseStyles = "shadow-basic rounded-2xl border-none bg-card text-card-foreground"
 
   return (
     <Card

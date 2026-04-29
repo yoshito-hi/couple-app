@@ -18,10 +18,6 @@ const meta: Meta<typeof AppButton> = {
       control: "select",
       options: ["default", "xs", "sm", "lg", "icon"],
     },
-    isAppStyle: {
-      control: "boolean",
-      description: "アプリ固有のスタイル（丸角、影、浮き上がり等）を適用するかどうか",
-    },
   },
 }
 
@@ -32,14 +28,6 @@ export const AppDefault: Story = {
   args: {
     variant: "default",
     children: "App Button (Default)",
-  },
-}
-
-export const ShadcnDefault: Story = {
-  args: {
-    variant: "default",
-    children: "Shadcn Style Button",
-    isAppStyle: false,
   },
 }
 

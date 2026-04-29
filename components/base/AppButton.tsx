@@ -8,8 +8,6 @@ export interface AppButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
   VariantProps<typeof buttonVariants> {
   asChild?: boolean
-  /** アプリ基本スタイルを適用するかどうか */
-  isAppStyle?: boolean
 }
 
 /**
@@ -20,13 +18,10 @@ export function AppButton({
   variant = "default",
   size = "default",
   className,
-  isAppStyle = true,
   ...props
 }: AppButtonProps) {
   // アプリ固有の基本スタイル
-  const appBaseStyles = isAppStyle
-    ? "font-zen-maru font-bold rounded-full shadow-basic transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5 px-8 py-3 h-auto"
-    : ""
+  const appBaseStyles = "font-zen-maru font-bold rounded-full shadow-basic transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5 px-8 py-3 h-auto"
 
   return (
     <Button

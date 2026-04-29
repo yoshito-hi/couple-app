@@ -50,23 +50,6 @@ export const Default: Story = {
   ),
 }
 
-export const ShadnDefault = {
-  args: {
-    isAppStyle: false,
-  },
-  render: (args) => (
-    <AppCard className="w-[350px] border" {...args}>
-      <AppCardHeader>
-        <AppCardTitle>標準スタイル</AppCardTitle>
-        <AppCardDescription>isAppStyle=false の場合です。</AppCardDescription>
-      </AppCardHeader>
-      <AppCardContent>
-        <p>shadcn/ui のデフォルトに近い外観になります。</p>
-      </AppCardContent>
-    </AppCard>
-  ),
-}
-
 export const WithImage: Story = {
   render: (args) => (
     <AppCard className="w-[350px]" {...args}>

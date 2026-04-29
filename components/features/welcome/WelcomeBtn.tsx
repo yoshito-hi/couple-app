@@ -8,7 +8,7 @@ export const WelcomeBtn = () => {
     <div>
       <AppCard className="flex flex-row items-center justify-center p-4 cursor-pointer transition-all duration-200 hover:-translate-y-0.5">
         <AppIcon icon={User} />
-        <TypographyH1 className="text-lg">
+        <TypographyH1 className="text-lg lg:text-2xl">
           ＊＊としてログイン
         </TypographyH1>
         <AppIcon icon={ArrowRight} variant="ghost" />
