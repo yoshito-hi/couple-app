@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from "@storybook/nextjs"
 import {
   AppCard,
   AppCardHeader,
@@ -9,6 +9,7 @@ import {
 } from "./AppCard"
 import { AppButton } from "./AppButton"
 import { TypographyH1, TypographyP } from "@/components/base/typography/typography"
+import Image from "next/image"
 
 const meta: Meta<typeof AppCard> = {
   title: "Base/AppCard",
@@ -49,7 +50,7 @@ export const Default: Story = {
   ),
 }
 
-export const ShadcnDefault = {
+export const ShadnDefault = {
   args: {
     isAppStyle: false,
   },
@@ -69,7 +70,7 @@ export const ShadcnDefault = {
 export const WithImage: Story = {
   render: (args) => (
     <AppCard className="w-[350px]" {...args}>
-      <img
+      <Image
         src="https://images.unsplash.com/photo-1588345921523-c2dcd27f1dcd?w=800&dpr=2&q=80"
         alt="Sample"
         className="aspect-video object-cover"

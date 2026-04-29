@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from "@storybook/nextjs"
 import { BookOpen, Heart, Star, Settings } from "lucide-react"
 import { AppIcon } from "./AppIcon"
 
