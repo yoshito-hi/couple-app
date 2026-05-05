@@ -16,12 +16,31 @@ const preview: Preview = {
       test: 'todo'
     }
   },
+  globalTypes: {
+    theme: {
+      name: 'Theme',
+      description: 'Global theme for components',
+      defaultValue: 'default',
+      toolbar: {
+        icon: 'paintbrush',
+        items: [
+          { value: 'default', title: 'Default' },
+          { value: 'theme-yoshito', title: 'Yoshito' },
+          { value: 'theme-naho', title: 'Naho' },
+        ],
+        showName: true,
+      },
+    },
+  },
   decorators: [
-    (Story) => (
-      <div className={`${geistSans.variable} ${geistMono.variable} ${zenMaruGothic.variable} ${notoSansJp.variable} font-sans antialiased`}>
-        <Story />
-      </div>
-    ),
+    (Story, context) => {
+      const theme = context.globals.theme;
+      return (
+        <div className={`${geistSans.variable} ${geistMono.variable} ${zenMaruGothic.variable} ${notoSansJp.variable} ${theme} font-sans antialiased`}>
+          <Story />
+        </div>
+      );
+    },
   ],
 };
 

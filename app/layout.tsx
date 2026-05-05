@@ -18,7 +18,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${zenMaruGothic.variable} ${notoSansJp.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-dvh flex items-center justify-center p-6 overflow-hidden">{children}</body>
     </html>
   );
 }

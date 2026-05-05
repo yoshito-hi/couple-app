@@ -6,7 +6,7 @@ export function TypographyH1({ children, className, style }: { children: React.R
       className={cn(
         "scroll-m-20 text-4xl font-bold tracking-tight",
         "font-zen-maru",          // Tailwindクラスも残しておく
-        "text-primary",           // モードに応じて切り替わる主色
+        "text-main",              // デザインシステムのMainカラー (#333333)
         "transition-colors duration-1000", // テーマ切り替え時の1秒フェード
         className
       )}
@@ -23,7 +23,7 @@ export function TypographyP({ children, className, style }: { children: React.Re
       className={cn(
         "scroll-m-20 text-md tracking-tight lg:text-lg",
         "font-noto-sans-jp",
-        "text-primary",           // モードに応じて切り替わる主色
+        "text-main",              // デザインシステムのMainカラー (#333333)
         "transition-colors duration-1000", // テーマ切り替え時の1秒フェード
         className
       )}

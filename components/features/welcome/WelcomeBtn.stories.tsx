@@ -13,4 +13,14 @@ const meta: Meta<typeof WelcomeBtn> = {
 export default meta
 type Story = StoryObj<typeof WelcomeBtn>
 
-export const Default: Story = {}
+export const Default: Story = {
+  args: {
+    label: "ユーザー名",
+  },
+}
+
+export const LongLabel: Story = {
+  args: {
+    label: "非常に長い名前のユーザーまたは長いメッセージがここに入ります",
+  },
+}
