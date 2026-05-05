@@ -4,7 +4,7 @@ export function TypographyH1({ children, className, style }: { children: React.R
   return (
     <h1
       className={cn(
-        "scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl",
+        "scroll-m-20 text-4xl font-bold tracking-tight",
         "font-zen-maru",          // Tailwindクラスも残しておく
         "text-primary",           // モードに応じて切り替わる主色
         "transition-colors duration-1000", // テーマ切り替え時の1秒フェード

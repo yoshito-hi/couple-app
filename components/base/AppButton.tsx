@@ -21,7 +21,7 @@ export function AppButton({
   ...props
 }: AppButtonProps) {
   // アプリ固有の基本スタイル
-  const appBaseStyles = "font-zen-maru font-bold rounded-full shadow-basic transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5 px-8 py-3 h-auto"
+  const appBaseStyles = "font-zen-maru font-bold rounded-full shadow-basic transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5 px-6 py-2 h-auto"
 
   return (
     <Button
